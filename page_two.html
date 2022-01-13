@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+    <!--you could do this or make a style .css class-->
+    <style>
+    .button{
+      background-color: transparent;
+      border: 2px solid black;
+      color: black;
+      padding: 16px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: none;
+
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+
+      transition-duration: 0.4s;
+    }
+
+
+    .button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    </style>
+  </head>
+  <body style="font-family:courier;">
+    <h1 style="text-align:center">My Second Webpage!</h1>
+    <p>Welcome to my second webpage!</p>
+    <p>Here's <a href="https://www.youtube.com/watch?v=k9JFitrgGgs&ab_channel=JomaTech">a video by Joma</a></p>
+    <a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda">
+      <img src="https://i1.wp.com/www.3wallpapers.fr/wp-content/uploads/2016/09/Kung-Fu-Panda-Po-Ping-Eating-3Wallpapers-iPhone-Parallax.jpg" alt="Po Ping" style="width:405px;height:720px">
+    </a>
+    <img src="https://c.tenor.com/ckOaiBGgA4EAAAAd/love-it-love.gif" alt="I Love it-Michael Scott" style="float:left;width:400px;height:223px">
+    <p>Check out: <a href="https://summerofcode.withgoogle.com/" target="_blank" rel="noopener noreferrer">Google Summer of Code</a>.</p>
+    
+    <!--Create an element-->
+    <button class="button" id="myBtn" style="font-family:courier">Click here to see a funny video!</button>
+
+    <script>
+    document.getElementById("myBtn").addEventListener("click", function() {window.open('https://www.youtube.com/watch?v=uGx0BWu9jrY&ab_channel=%EA%B5%AD%EA%B0%80%EB%B9%84Gabiekook', '_blank');})
+    </script>
+  </body>
+</html>
